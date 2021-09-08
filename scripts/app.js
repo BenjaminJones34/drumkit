@@ -22,6 +22,7 @@ let sounds = [[boom, "b"], [clap, "c"], [hihat, "h"], [kick, "k"], [openhat, "o"
 let buttons = [boomButton, clapButton, hihatButton, kickButton, openhatButton, rideButton, snareButton, tinkButton, tomButton];
 
 function playSound(index) {
+    sounds[index][0].currentTime = 0;
     sounds[index][0].play();
     buttons[index].style.marginTop = "5%";
     buttons[index].style.marginLeft = "5%";
@@ -32,7 +33,8 @@ function playSound(index) {
         buttons[index].style.marginLeft = "0%";
         buttons[index].style.backgroundColor = "rgba(101, 211, 101, 0.623)";
         buttons[index].style.boxShadow = "10px 20px 5px rgb(50, 50, 50, 0.5)";
-    }, 500);
+    
+    }, 100);
     
 };
 
