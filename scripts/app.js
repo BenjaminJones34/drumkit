@@ -18,7 +18,7 @@ const snareButton = document.querySelector("#snare");
 const tinkButton = document.querySelector("#tink");
 const tomButton = document.querySelector("#tom");
 
-let sounds = [[boom, "b"], [clap, "c"], [hihat, "h"], [kick, "k"], [openhat, "o"], [ride, "r"], [snare, "s"], [tink, "t"], [tom, "m"]];
+let sounds = [[boom, "a"], [clap, "s"], [hihat, "d"], [kick, "f"], [openhat, "g"], [ride, "h"], [snare, "j"], [tink, "k"], [tom, "l"]];
 let buttons = [boomButton, clapButton, hihatButton, kickButton, openhatButton, rideButton, snareButton, tinkButton, tomButton];
 
 function playSound(index) {
@@ -48,31 +48,31 @@ for (let i = 0; i < buttons.length; i++) {
 
 window.addEventListener("keydown", (event)=> {
     switch (event.key.toLowerCase()) {
-        case "b":
+        case "a":
             playSound(0);
             break;
-        case "c":
+        case "s":
             playSound(1);
             break;
-        case "h":
+        case "d":
             playSound(2);
             break;
-        case "k":
+        case "f":
             playSound(3);
             break;
-        case "o":
+        case "g":
             playSound(4);
             break;
-        case "r":
+        case "h":
             playSound(5);
             break;
-        case "s":
+        case "j":
             playSound(6);
             break;
-        case "t":
+        case "k":
             playSound(7);
             break;
-        case "m":
+        case "l":
             playSound(8);
             break;
     };
